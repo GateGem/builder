@@ -1,0 +1,14 @@
+{
+    "name": "Builder",
+    "alias": "builder",
+    "description": "",
+    "keywords": [],
+    "priority": 100,
+    "namespace":"GateGate\\Builder",
+    "providers": [
+        "GateGate\\Builder\\BuilderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
