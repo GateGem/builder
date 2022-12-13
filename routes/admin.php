@@ -11,3 +11,7 @@
 |
 */
 
+use GateGem\Builder\Http\Livewire\Builder\Index;
+use Illuminate\Support\Facades\Route;
+
+Route::get('test-builder',Index::class);

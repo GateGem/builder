@@ -55,6 +55,10 @@ class BuilderServiceProvider extends ServiceProvider
     }
     public function packageBooted()
     {
+
+        add_link_symbolic(__DIR__ . '/../public', public_path('modules/gate-builder'));
+        add_asset_js(asset('modules/gate-builder/js/gate-builder.js'), '', 0);
+        add_asset_css(asset('modules/gate-builder/css/gate-builder.css'), '',  0);
         $this->bootGate();
     }
 }
