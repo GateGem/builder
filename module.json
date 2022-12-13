@@ -3,10 +3,10 @@
     "alias": "builder",
     "description": "",
     "keywords": [],
-    "priority": 100,
-    "namespace":"GateGate\\Builder",
+    "priority": 0,
+    "namespace":"GateGem\\Builder",
     "providers": [
-        "GateGate\\Builder\\BuilderServiceProvider"
+        "GateGem\\Builder\\BuilderServiceProvider"
     ],
     "aliases": {},
     "files": [],

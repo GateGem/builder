@@ -1,6 +1,6 @@
 <?php
 
-namespace GateGate\Builder;
+namespace GateGem\Builder;
 
 use Illuminate\Support\ServiceProvider;
 use GateGem\Core\Support\Core\ServicePackage;

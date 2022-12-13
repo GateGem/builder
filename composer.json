@@ -1,12 +1,26 @@
 {
-    "name": "gategate/builder",
-    "description": "",
+    "name": "gategem/builder", 
+    "description": "GateBuilder Laravel Web Builder. Next generation tool for building templates without coding.like wordpress.",
+    "keywords": [
+      "GateGem",
+      "laravel",
+      "builder",
+      "page builder",
+      "email builder",
+      "form builder",
+      "core",
+      "wordpress ",
+      "wordpress builder",
+      "GateGem Platform"
+    ],
     "authors": [
         {
             "name": "Nguyen Van Hau",
             "email": "nguyenvanhaudev@gmail.com"
         }
     ],
+    "homepage": "https://github.com/GateGem/builder",
+    "license": "MIT",
     "extra": {
         "laravel": {
             "providers": [],
@@ -17,9 +31,9 @@
     },
     "autoload": {
         "psr-4": {
-            "GateGate\\Builder\\": "src",
-            "GateGate\\Builder\\Database\\Factories\\": "database/factories",
-            "GateGate\\Builder\\Database\\Seeders\\": "database/seeders"
+            "GateGem\\Builder\\": "src",
+            "GateGem\\Builder\\Database\\Factories\\": "database/factories",
+            "GateGem\\Builder\\Database\\Seeders\\": "database/seeders"
         }
     }
 }
