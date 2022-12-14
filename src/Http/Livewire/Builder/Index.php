@@ -2,23 +2,18 @@
 
 namespace GateGem\Builder\Http\Livewire\Builder;
 
-use GateGem\Core\Facades\Theme;
+use GateGem\Builder\Traits\WithPageBuilder;
 use GateGem\Core\Livewire\Component;
 
 class Index extends Component
 {
-    public function boot()
-    {
-        Theme::setLayout('none');
-    }
+    use WithPageBuilder;
     public function render()
     {
         return <<<'blade'
             <div>
-                <div id="gjs">
-                    <h1>Hello World Component!</h1>
+                <div class="el-builder">
                 </div>
-                <div id="blocks"></div>
             </div>
         blade;
     }
