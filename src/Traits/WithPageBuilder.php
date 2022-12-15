@@ -12,6 +12,7 @@ trait WithPageBuilder
     public $DataBuilderCss;
     public $DataBuilderJs;
     public $BuilderName;
+    public $fromElement = true;
 
     public $ListBlocks = [
         [

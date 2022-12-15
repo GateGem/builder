@@ -25,8 +25,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var grapesjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! grapesjs */ "./node_modules/grapesjs/dist/grapes.min.js");
 /* harmony import */ var grapesjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(grapesjs__WEBPACK_IMPORTED_MODULE_0__);
 
-// import options from './config';
-
 if (window != undefined) {
   window.grapesjs = (grapesjs__WEBPACK_IMPORTED_MODULE_0___default());
   var loadEventGrapesjs = function loadEventGrapesjs(el) {
@@ -35,11 +33,13 @@ if (window != undefined) {
       if (wireElent) {
         var _wireComponent$data$D;
         var wireComponent = livewire.components.componentsById[wireElent.getAttribute("wire:id")];
+        var fromElement = wireComponent.data.fromElement;
         var ListBlocks = wireComponent.data.ListBlocks;
         var DataBuilderJson = (_wireComponent$data$D = wireComponent.data.DataBuilderJson) !== null && _wireComponent$data$D !== void 0 ? _wireComponent$data$D : {};
         var editor = grapesjs__WEBPACK_IMPORTED_MODULE_0___default().init({
           // Indicate where to init the editor. You can also pass an HTMLElement
           container: elItem,
+          fromElement: fromElement !== null && fromElement !== void 0 ? fromElement : false,
           storageManager: false,
           assetManager: {
             custom: {

@@ -1,5 +1,4 @@
 import grapesjs from "grapesjs";
-// import options from './config';
 
 if (window != undefined) {
   window.grapesjs = grapesjs;
@@ -9,12 +8,14 @@ if (window != undefined) {
       if (wireElent) {
         const wireComponent =
           livewire.components.componentsById[wireElent.getAttribute("wire:id")];
+        const fromElement = wireComponent.data.fromElement;
         const ListBlocks = wireComponent.data.ListBlocks;
         const DataBuilderJson = wireComponent.data.DataBuilderJson ?? {};
 
         const editor = grapesjs.init({
           // Indicate where to init the editor. You can also pass an HTMLElement
           container: elItem,
+          fromElement: fromElement ?? false,
           storageManager: false,
           assetManager: {
             custom: {

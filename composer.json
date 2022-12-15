@@ -32,6 +32,7 @@
     "autoload": {
         "psr-4": {
             "GateGem\\Builder\\": "src",
+            "GateGem\\Builder\\Widget\\": "widgets",
             "GateGem\\Builder\\Database\\Factories\\": "database/factories",
             "GateGem\\Builder\\Database\\Seeders\\": "database/seeders"
         }

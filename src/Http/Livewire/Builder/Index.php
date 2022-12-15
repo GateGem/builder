@@ -13,6 +13,7 @@ class Index extends Component
         return <<<'blade'
             <div>
                 <div class="el-builder">
+                
                 </div>
             </div>
         blade;
