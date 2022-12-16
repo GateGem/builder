@@ -31,12 +31,12 @@ class BuilderServiceProvider extends ServiceProvider
     }
     public function registerMenu()
     {
-          add_menu_with_sub(function ($subItem) {
-            $subItem
-                ->addItem('builder::menu.sidebar.feature1', 'bi bi-speedometer', '', ['name' => 'core.table.slug', 'param' => ['module' => 'feature1']], MenuBuilder::ItemRouter)
-                ->addItem('builder::menu.sidebar.feature2', 'bi bi-speedometer', '', ['name' => 'core.table.slug', 'param' => ['module' => 'feature2']], MenuBuilder::ItemRouter)
-                ->addItem('builder::menu.sidebar.feature3', 'bi bi-speedometer', '', ['name' => 'core.table.slug', 'param' => ['module' => 'feature3']], MenuBuilder::ItemRouter);
-        }, 'builder::menu.sidebar.feature',  'bi bi-speedometer');
+        //   add_menu_with_sub(function ($subItem) {
+        //     $subItem
+        //         ->addItem('builder::menu.sidebar.feature1', 'bi bi-speedometer', '', ['name' => 'core.table.slug', 'param' => ['module' => 'feature1']], MenuBuilder::ItemRouter)
+        //         ->addItem('builder::menu.sidebar.feature2', 'bi bi-speedometer', '', ['name' => 'core.table.slug', 'param' => ['module' => 'feature2']], MenuBuilder::ItemRouter)
+        //         ->addItem('builder::menu.sidebar.feature3', 'bi bi-speedometer', '', ['name' => 'core.table.slug', 'param' => ['module' => 'feature3']], MenuBuilder::ItemRouter);
+        // }, 'builder::menu.sidebar.feature',  'bi bi-speedometer');
     }
     public function packageRegistered()
     {
